@@ -7,6 +7,6 @@ def ulang(text, ulang):
         print(text)
         a = a+1
 
-nama = input("masukkan nama anda : ")
-jumlah = int(input("masukkan pengulangan : "))
+nama = input(" masukkan nama anda : ")
+jumlah = int(input(" masukkan pengulangan : "))
 ulang(nama, jumlah)
