@@ -23,7 +23,7 @@ print('''
    | | |  ___/  | | |_ |/ _ \/ _ \| |    / _ \ / __/ _` | __| |/ _ \| '_ \ 
   _| |_| |      | |__| |  __/ (_) | |___| (_) | (_| (_| | |_| | (_) | | | |
  |_____|_|       \_____|\___|\___/|______\___/ \___\__,_|\__|_|\___/|_| |_|
-                By : AdliXSec   Team : Dark Clown Security     
+        By : AdliXSec   Team : Dark Clown Security             v1.0  
 				                                             
 ''')
 ipaddr = input(" Ip Address : ")
