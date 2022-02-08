@@ -8,7 +8,14 @@ if platform.system() == "Windows":
 else:
     hapus = "clear"
 
+def warna(osw):
+	if osw == "Windows":
+		os.system("color a")
+	else:
+		print("\033[92m")
+
 os.system(hapus)
+warna(platform.system())
 print('''
   _____ _____     _____            _                     _   _             
  |_   _|  __ \   / ____|          | |                   | | (_)            
@@ -19,7 +26,7 @@ print('''
                 By : AdliXSec   Team : Dark Clown Security     
 				                                             
 ''')
-ipaddr = input("Ip Address : ")
+ipaddr = input(" Ip Address : ")
 ipreq = requests.get(f"http://ip-api.com/json/{ipaddr}")
 
 if ipreq.status_code == 200:
@@ -27,10 +34,10 @@ if ipreq.status_code == 200:
 
 	if ipdata["status"] == "success":
 		for key in ipdata:
-			print(f"{key.capitalize()} : {ipdata[key]}")
+			print(f" {key.capitalize()} : {ipdata[key]}")
 			
 			if key == "lon":
 				lat = ipdata["lat"]
 				lon = ipdata["lon"]
 				maps = f"https://www.google.com/maps/@{lat},{lon},9z"
-				print(f"Maps : {maps}")
+				print(f" Maps : {maps}")
